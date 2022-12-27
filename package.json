@@ -1,0 +1,37 @@
+{
+  "name": "skd-aws-apig-lm",
+  "version": "0.1.0",
+  "bin": {
+    "skd-aws-apig-lm": "bin/skd-aws-apig-lm.js"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./build",
+    "build": "npm install && npm run clean && tsc",
+    "deploy": "npm run build && npm prune --production"
+  },
+  "author": "Hari Lakshmi Narayanan",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "@types/jest": "^27.5.2",
+    "@types/lambda-log": "^2.2.1",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "aws-cdk": "2.51.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.9.1",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk": "^2.50.0",
+    "aws-cdk-lib": "2.51.1",
+    "aws-lambda": "^1.0.7",
+    "constructs": "^10.0.0",
+    "lambda-log": "^3.1.0",
+    "query-string": "^7.1.1",
+    "source-map-support": "^0.5.21"
+  }
+}

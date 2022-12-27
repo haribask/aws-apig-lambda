@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "dependendent node modules for all lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.208.0",
+    "@aws-sdk/client-ssm": "^3.211.0",
+    "axios": "^0.27.2",
+    "lambda-log": "^3.1.0",
+    "query-string": "^7.1.1",
+    "source-map-support": "^0.5.21"
+  }
+}
